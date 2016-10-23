@@ -1,0 +1,10 @@
+#!/bin/bash
+
+HERE="$(basename "$(pwd)")"
+REPO=HERE
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/docker-toolbox/${REPO}.git
+git push -u origin master
